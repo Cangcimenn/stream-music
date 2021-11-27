@@ -56,12 +56,22 @@ async def play(c: Client, m: Message):
     chat_id = m.chat.id
     keyboard = InlineKeyboardMarkup(
         [
-            [
-                InlineKeyboardButton(text="• Mᴇɴᴜ", callback_data="cbmenu"),
-                InlineKeyboardButton(text="• Cʟᴏsᴇ", callback_data="cls"),
-            ]
-        ]
-    )
+                    [
+                        InlineKeyboardButton(text="•ᴍᴇɴᴜ•", callback_data="cbmenu"),
+                        ),
+                        InlineKeyboardButton(
+                            "•ᴄʜᴀɴɴᴇʟ•", url=f"https://t.me/Takichanbot"
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            "•ᴏᴡɴᴇʀ•", url="https://t.me/Zxyune"
+                        ),
+                        InlineKeyboardButton(text="•ᴄʟᴏsᴇ•", callback_data="cls"),
+                    ],
+                ]
+            ),
+        )
     if m.sender_chat:
         return await m.reply_text("you're an __Anonymous Admin__ !\n\n» revert back to user account from admin rights.")
     try:
@@ -271,12 +281,22 @@ async def stream(c: Client, m: Message):
     chat_id = m.chat.id
     keyboard = InlineKeyboardMarkup(
         [
-            [
-                InlineKeyboardButton(text="• Mᴇɴᴜ", callback_data="cbmenu"),
-                InlineKeyboardButton(text="• Cʟᴏsᴇ", callback_data="cls"),
-            ]
-        ]
-    )
+                    [
+                        InlineKeyboardButton(text="•ᴍᴇɴᴜ•", callback_data="cbmenu"),
+                        ),
+                        InlineKeyboardButton(
+                            "•ᴄʜᴀɴɴᴇʟ•", url=f"https://t.me/Takichanbot"
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            "•ᴏᴡɴᴇʀ•", url="https://t.me/Zxyune"
+                        ),
+                        InlineKeyboardButton(text="•ᴄʟᴏsᴇ•", callback_data="cls"),
+                    ],
+                ]
+            ),
+        )
     if m.sender_chat:
         return await m.reply_text("you're an __Anonymous Admin__ !\n\n» revert back to user account from admin rights.")
     try:

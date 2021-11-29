@@ -16,36 +16,34 @@ from config import (
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""✨ **Welcome [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
-💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) allows you to play music and video on groups through the new Telegram's video chats!**
-
-💡 **Find out all the Bot's commands and how they work by clicking on the » 📚 Commands button!**
-
-🔖 **To know how to use this bot, please click on the » ❓ Basic Guide button!**""",
+        f"""✨ **ᴡᴇʟᴄᴏᴍᴇ {message.from_user.mention()} !**\n
+[{BOT_NAME}](https://t.me/{BOT_USERNAME}) **ᴍᴇᴍᴜɴɢᴋɪɴᴋᴀɴ ᴀɴᴅᴀ ᴍᴇᴍᴜᴛᴀʀ ᴍᴜsɪᴋ ᴅᴀɴ ᴠɪᴅᴇᴏ ᴅɪ ɢʀᴜᴘ ᴍᴇʟᴀʟᴜɪ ᴏʙʀᴏʟᴀɴ ᴠɪᴅᴇᴏ ᴛᴇʟᴇɢʀᴀᴍ!**
+**ᴄᴀʀɪ ᴛᴀʜᴜ sᴇᴍᴜᴀ ᴘᴇʀɪɴᴛᴀʜ ʙᴏᴛ ᴅᴀɴ ᴄᴀʀᴀ ᴋᴇʀᴊᴀɴʏᴀ ᴅᴇɴɢᴀɴ ᴍᴇɴɢᴋʟɪᴋ ᴛᴏᴍʙᴏʟ » ᴄᴏᴍᴍᴀɴᴅ!**
+""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕",
+                        "➕ ᴀᴅᴅ ʟᴀʟᴀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("🌸ʙᴀsɪᴄ ɢᴜɪᴅᴇ🌸", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤ Donate", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("🌸ᴄᴏᴍᴍᴀɴᴅs🌸", callback_data="cbcmds"),
+                    InlineKeyboardButton("🌸ᴅᴏɴᴀᴛᴇ🌸", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "🌸ᴏꜰꜰɪᴄɪᴀʟ ɢʀᴏᴜᴘ🌸", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "🌸ᴏꜰꜰɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ🌸", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👩‍💻 Developer", url="https://t.me/Zxyune"
+                        "🌸ᴅᴇᴠᴇʟᴏᴘᴇʀ🌸", url="https://t.me/Zxyune"
                     )
                 ],
             ]

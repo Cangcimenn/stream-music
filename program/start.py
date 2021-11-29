@@ -54,8 +54,8 @@ async def _human_time_duration(seconds):
 async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""✨ **ᴡᴇʟᴄᴏᴍᴇ {message.from_user.mention()} !**\n
-[{BOT_NAME}](https://t.me/{BOT_USERNAME}) **ᴍᴇᴍᴜɴɢᴋɪɴᴋᴀɴ ᴀɴᴅᴀ ᴍᴇᴍᴜᴛᴀʀ ᴍᴜsɪᴋ ᴅᴀɴ ᴠɪᴅᴇᴏ ᴅɪ ɢʀᴜᴘ ᴍᴇʟᴀʟᴜɪ ᴏʙʀᴏʟᴀɴ ᴠɪᴅᴇᴏ ᴛᴇʟᴇɢʀᴀᴍ!**
-**ᴄᴀʀɪ ᴛᴀʜᴜ sᴇᴍᴜᴀ ᴘᴇʀɪɴᴛᴀʜ ʙᴏᴛ ᴅᴀɴ ᴄᴀʀᴀ ᴋᴇʀᴊᴀɴʏᴀ ᴅᴇɴɢᴀɴ ᴍᴇɴɢᴋʟɪᴋ ᴛᴏᴍʙᴏʟ » ᴄᴏᴍᴍᴀɴᴅ!**
+✨ [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **ᴍᴇᴍᴜɴɢᴋɪɴᴋᴀɴ ᴀɴᴅᴀ ᴍᴇᴍᴜᴛᴀʀ ᴍᴜsɪᴋ ᴅᴀɴ ᴠɪᴅᴇᴏ ᴅɪ ɢʀᴜᴘ ᴍᴇʟᴀʟᴜɪ ᴏʙʀᴏʟᴀɴ ᴠɪᴅᴇᴏ ᴛᴇʟᴇɢʀᴀᴍ!**
+✨ **ᴄᴀʀɪ ᴛᴀʜᴜ sᴇᴍᴜᴀ ᴘᴇʀɪɴᴛᴀʜ ʙᴏᴛ ᴅᴀɴ ᴄᴀʀᴀ ᴋᴇʀᴊᴀɴʏᴀ ᴅᴇɴɢᴀɴ ᴍᴇɴɢᴋʟɪᴋ ᴛᴏᴍʙᴏʟ » ᴄᴏᴍᴍᴀɴᴅ!**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -72,10 +72,10 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌸ᴏꜰꜰɪᴄɪᴀʟ ɢʀᴏᴜᴘ🌸", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "🌸ɢʀᴏᴜᴘ🌸", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "🌸ᴏꜰꜰɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ🌸", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "🌸ᴄʜᴀɴɴᴇʟ🌸", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [

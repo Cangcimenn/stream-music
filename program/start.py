@@ -53,9 +53,9 @@ async def _human_time_duration(seconds):
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""✨ **Welcome {message.from_user.mention()} !**\n
-💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **Memungkinkan Anda memutar musik dan video di grup melalui obrolan video Telegram!**
-💡 **Cari tahu semua perintah Bot dan cara kerjanya dengan mengklik tombol » command!**
+        f"""✨ **ᴡᴇʟᴄᴏᴍᴇ {message.from_user.mention()} !**\n
+[{BOT_NAME}](https://t.me/{BOT_USERNAME}) **ᴍᴇᴍᴜɴɢᴋɪɴᴋᴀɴ ᴀɴᴅᴀ ᴍᴇᴍᴜᴛᴀʀ ᴍᴜsɪᴋ ᴅᴀɴ ᴠɪᴅᴇᴏ ᴅɪ ɢʀᴜᴘ ᴍᴇʟᴀʟᴜɪ ᴏʙʀᴏʟᴀɴ ᴠɪᴅᴇᴏ ᴛᴇʟᴇɢʀᴀᴍ!**
+**ᴄᴀʀɪ ᴛᴀʜᴜ sᴇᴍᴜᴀ ᴘᴇʀɪɴᴛᴀʜ ʙᴏᴛ ᴅᴀɴ ᴄᴀʀᴀ ᴋᴇʀᴊᴀɴʏᴀ ᴅᴇɴɢᴀɴ ᴍᴇɴɢᴋʟɪᴋ ᴛᴏᴍʙᴏʟ » ᴄᴏᴍᴍᴀɴᴅ!**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -65,22 +65,22 @@ async def start_(client: Client, message: Message):
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("❓ʙᴀsɪᴄ ɢᴜɪᴅᴇ", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("🌸ʙᴀsɪᴄ ɢᴜɪᴅᴇ🌸", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅs", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤️ ᴅᴏɴᴀᴛᴇ", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("🌸ᴄᴏᴍᴍᴀɴᴅs🌸", callback_data="cbcmds"),
+                    InlineKeyboardButton("🌸ᴅᴏɴᴀᴛᴇ🌸", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "🌸ᴏꜰꜰɪᴄɪᴀʟ ɢʀᴏᴜᴘ🌸", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 sᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "🌸ᴏꜰꜰɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ🌸", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👩‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/Zxyune"
+                        "🌸ᴅᴇᴠᴇʟᴏᴘᴇʀ🌸", url="https://t.me/Zxyune"
                     )
                 ],
             ]
@@ -100,9 +100,9 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("✨ ɢʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("🌸ɢʀᴏᴜᴘ🌸", url=f"https://t.me/{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
-                    "📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "🌸ᴄʜᴀɴɴᴇʟ🌸", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
             ]
         ]
@@ -150,11 +150,11 @@ async def new_chat(c: Client, m: Message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                            InlineKeyboardButton("💭 sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP_SUPPORT}")
+                            InlineKeyboardButton("🌸ᴄʜᴀɴɴᴇʟ🌸", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                            InlineKeyboardButton("🌸sᴜᴘᴘᴏʀᴛ🌸", url=f"https://t.me/{GROUP_SUPPORT}")
                         ],
                         [
-                            InlineKeyboardButton("👤 Assistant", url=f"https://t.me/{ass_uname}")
+                            InlineKeyboardButton("🌸ᴀsɪssᴛᴀɴᴛ🌸", url=f"https://t.me/{ass_uname}")
                         ]
                     ]
                 )

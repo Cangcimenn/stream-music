@@ -70,7 +70,7 @@ async def start_(client: Client, message: Message):
                         "ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/{UPDATES_CHANNEL}")
                 ],[
                     InlineKeyboardButton(
-                        "ᴄʀᴇᴀᴛᴏʀ​", url=f"https://t.me/Zxyune"
+                        "ᴄʀᴇᴀᴛᴏʀ​", url=f"https://t.me/{OWNER_NAME}"
                     )
                 ]
             ]

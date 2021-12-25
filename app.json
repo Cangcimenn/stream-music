@@ -8,9 +8,9 @@
         "video stream",
         "pyrogram"
     ],
-    "website": "https://t.me/levinachannel",
-    "repository": "https://github.com/levina-lab/video-stream",
-    "success_url": "https://t.me/dlwrml",
+    "website": "https://t.me/Takichanbot",
+    "repository": "https://github.com/Cangcimenn/stream-music",
+    "success_url": "https://t.me/Zxyune",
     "env": {
         "API_ID": {
             "description": "your API_ID from my.telegram.org",
@@ -51,7 +51,7 @@
         "GROUP_SUPPORT": {
             "description": "if you have group, then fill the group username here without @",
             "required": true,
-            "value": "isi grup lu"
+            "value": "skylasupport"
         },
         "UPDATES_CHANNEL": {
             "description": "if you have channel, then fill the channel username here without @",

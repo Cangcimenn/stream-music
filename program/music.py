@@ -61,7 +61,7 @@ async def play(c: Client, m: Message):
                         InlineKeyboardButton(text="•ᴄʜᴀɴɴᴇʟ•", url=f"https://t.me/Takichanbot")
                     ],
                     [
-                        InlineKeyboardButton(text="•ᴏᴡɴᴇʀ•", url="t.me/{OWNER_NAME}"),
+                        InlineKeyboardButton(text="•ᴏᴡɴᴇʀ•", url="https://t.me/Zxyune"),
                         InlineKeyboardButton(text="•ᴄʟᴏsᴇ•", callback_data="cls")
                     ]
                 ]
@@ -281,7 +281,7 @@ async def stream(c: Client, m: Message):
                         InlineKeyboardButton(text="•ᴄʜᴀɴɴᴇʟ•", url=f"https://t.me/Takichanbot")
                     ],
                     [
-                        InlineKeyboardButton(text="•ᴏᴡɴᴇʀ•", url="t.me/{OWNER_NAME}"),
+                        InlineKeyboardButton(text="•ᴏᴡɴᴇʀ•", url="https://t.me/Zxyune"),
                         InlineKeyboardButton(text="•ᴄʟᴏsᴇ•", callback_data="cls")
                     ]
                 ]

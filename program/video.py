@@ -5,7 +5,7 @@
 import re
 import asyncio
 
-from config import ASSISTANT_NAME, BOT_USERNAME, IMG_1, IMG_2
+from config import OWNER_NAME, ASSISTANT_NAME, BOT_USERNAME, IMG_1, IMG_2
 from driver.filters import command, other_filters
 from driver.queues import QUEUE, add_to_queue
 from driver.veez import call_py, user
@@ -67,7 +67,7 @@ async def vplay(c: Client, m: Message):
                         InlineKeyboardButton(text="•ᴄʜᴀɴɴᴇʟ•", url=f"https://t.me/Takichanbot")
                     ],
                     [
-                        InlineKeyboardButton("•ᴏᴡɴᴇʀ•", url="https://t.me/Zxyune"),
+                        InlineKeyboardButton("•ᴏᴡɴᴇʀ•", url="https://t.me/{OWNER_NAME"),
                         InlineKeyboardButton(text="•ᴄʟᴏsᴇ•", callback_data="cls")
                     ]
                 ]
@@ -308,7 +308,7 @@ async def vstream(c: Client, m: Message):
                         InlineKeyboardButton(text="•ᴄʜᴀɴɴᴇʟ•", url=f"https://t.me/Takichanbot")
                     ],
                     [
-                        InlineKeyboardButton(text="•ᴏᴡɴᴇʀ•", url="https://t.me/Zxyune"),
+                        InlineKeyboardButton(text="•ᴏᴡɴᴇʀ•", url="https://t.me/{OWNER_NAME}"),
                         InlineKeyboardButton(text="•ᴄʟᴏsᴇ•", callback_data="cls")
                     ]
                 ]

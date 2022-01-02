@@ -21,31 +21,21 @@ async def cbstart(_, query: CallbackQuery):
 **ᴄᴀʀɪ ᴛᴀʜᴜ sᴇᴍᴜᴀ ᴘᴇʀɪɴᴛᴀʜ ʙᴏᴛ ᴅᴀɴ ᴄᴀʀᴀ ᴋᴇʀᴊᴀɴʏᴀ ᴅᴇɴɢᴀɴ ᴍᴇɴɢᴋʟɪᴋ ᴛᴏᴍʙᴏʟ » ᴄᴏᴍᴍᴀɴᴅ!**
 """,
         reply_markup=InlineKeyboardMarkup(
-            [
+            [ 
                 [
                     InlineKeyboardButton(
-                        "➕ ᴀᴅᴅ ʟᴀʟᴀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕",
-                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-                    )
-                ],
-                [InlineKeyboardButton("🌸ʙᴀsɪᴄ ɢᴜɪᴅᴇ🌸", callback_data="cbhowtouse")],
-                [
-                    InlineKeyboardButton("🌸ᴄᴏᴍᴍᴀɴᴅs🌸", callback_data="cbcmds"),
-                    InlineKeyboardButton("🌸ᴅᴏɴᴀᴛᴇ🌸", url=f"https://t.me/{OWNER_NAME}"),
-                ],
-                [
+                        "➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ​ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                ],[
                     InlineKeyboardButton(
-                        "🌸ᴏꜰꜰɪᴄɪᴀʟ ɢʀᴏᴜᴘ🌸", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "ᴄᴏᴍᴍᴀɴᴅ", callback_data="cbcmds"
                     ),
                     InlineKeyboardButton(
-                        "🌸ᴏꜰꜰɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ🌸", url=f"https://t.me/{UPDATES_CHANNEL}"
-                    ),
-                ],
-                [
+                        "ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/{UPDATES_CHANNEL}")
+                ],[
                     InlineKeyboardButton(
-                        "🌸ᴅᴇᴠᴇʟᴏᴘᴇʀ🌸", url="https://t.me/Zxyune"
+                        "ᴄʀᴇᴀᴛᴏʀ​", url=f"https://t.me/{OWNER_NAME}"
                     )
-                ],
+                ]
             ]
         ),
         disable_web_page_preview=True,
@@ -178,9 +168,9 @@ async def cbmenu(_, query: CallbackQuery):
               f"⚙️ **settings of** {query.message.chat.title}\n\n⏸ : pause stream\n▶️ : resume stream\n🔇 : mute userbot\n🔊 : unmute userbot\n⏹ : stop stream",
               reply_markup=InlineKeyboardMarkup(
                   [[
-                      InlineKeyboardButton("⏹", callback_data="cbstop"),
-                      InlineKeyboardButton("⏸", callback_data="cbpause"),
-                      InlineKeyboardButton("▶️", callback_data="cbresume"),
+                      InlineKeyboardButton("▢", callback_data="cbstop"),
+                      InlineKeyboardButton("II", callback_data="cbpause"),
+                      InlineKeyboardButton("▷", callback_data="cbresume"),
                   ],[
                       InlineKeyboardButton("🔇", callback_data="cbmute"),
                       InlineKeyboardButton("🔊", callback_data="cbunmute"),
